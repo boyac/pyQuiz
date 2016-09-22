@@ -1,0 +1,11 @@
+Shilpa|500|California|63
+Tom|25|New York|615
+Krasi|9000|California|1230
+Tom|25|New York|1235
+Tom|25|New York|1238
+Shilpa|50|Michigan|1300
+Matt|90000|Georgia|1305
+Jay|100000|Virginia|1310
+Krasi|49|Florida|1320
+Krasi|83|California|1325
+Shilpa|50|California|1350

@@ -1,0 +1,26 @@
+Write some code that generates the optimal set of job assignments.
+Important decisions are being made: 
+1. what kind of opportunity to pursue,
+2. where to pursue it, 
+3. and who to have with you along the way.
+
+
+Class VariablestoConsider:
+  
+  def JobsOffers():
+    Jobs: Each type of job has certain benefits and drawbacks along 
+    several dimensions (Pay, Hours, Impact, Opportunity to Learn)
+  
+  def YourPersonality():
+    Personalities: Accordingly, different types of people have different sets of preferences 
+    across these job dimensions. These preferences can be thought of as coefficients for the 
+    utility offered in each dimension (Pay, Hours, Impact, Opportunity to Learn)
+
+  def Relationship():
+    Lastly, people don't consider their job choices in a vacuum; 
+    their utility derived from a job is a function of both the job itself and the people around them. 
+    Since jobs are associated with specific geographies, the geography of the job alone can have a sizable impact on people's happiness.
+
+
+
+Origional Problems: http://www.predictivetechnologies.com/careers/puzzles/the-perfect-job.aspx

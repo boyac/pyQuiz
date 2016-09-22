@@ -1,0 +1,13 @@
+Amy | Hofferman Smith-Daniels | Investment Bank | San Francisco
+Amy | Bigup-Side | Startup | Washington, DC
+Bob | Irreverent Technologies | Startup | NYC
+Bob | Hofferman Smith-Daniels | Investment Bank | San Francisco
+Christine | InnoTech | Big Software Firm | Washington, DC
+Christine | Integral Derivatives | Investment Bank | NYC
+Christine | Stanguard | Grad School | NYC
+David | Advantech | Big Software Firm | San Francisco
+David | Artistic Electronics | Big Software Firm | NYC
+David | Mortgages-R-Us | Investment Bank | Washington, DC
+Elizabeth | Haverland University | Grad School | Washington, DC
+Elizabeth | Dartboard Modeling | Hedge Fund | NYC
+Elizabeth | NobleChoice | Grad School | San Francisco

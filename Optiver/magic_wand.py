@@ -30,7 +30,10 @@ def magic_wand(num_sig, num_wand):
 		red.append(i.count('R'))
 
 	return sum([2**(-num_sig)*mean(range(1, (80*(i-num_wand)+1))) for i in red if i > num_wand])
-	
+	# by definition, the expectated value is the probability of event occurring * possible values
+	# thus, for example, when there are 2 street signals, the event is like: GG, RR, RG, GR.
+	# and after applying the magic, it become GG, RG, GG, GG. Thus, the expected value become 1/4*(1/80)*(80+1)*80*0.5.
+	# 1/4 is the occurring opportunity of RG, and 1/80 is the uniform distribution of waiting time (1, 2, 3...80)
 
 if __name__ == '__main__':
 	print magic_wand(2, 1) #10.125

@@ -33,6 +33,6 @@ def magic_wand(num_sig, num_wand):
 	
 
 if __name__ == '__main__':
-	print magic_wand(2, 1) #10.125; 40?
-	print magic_wand(3, 1) #25.25; 50?
+	print magic_wand(2, 1) #10.125
+	print magic_wand(3, 1) #25.25
 	

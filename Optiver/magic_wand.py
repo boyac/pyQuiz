@@ -30,8 +30,8 @@ def magic_wand(num_sig, num_wand):
 	for i in toss:
 		red.append(i.count('R'))
 
-	return sum([2**(-num_sig)*mean(range(1, (80*(i-num_wand)))) for i in red if i > num_wand])
-
+	return sum([2**(-num_sig)*mean(range(0, 81)) for i in red if i > num_wand])
+	
 	
 
 if __name__ == '__main__':

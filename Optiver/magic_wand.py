@@ -31,10 +31,11 @@ def magic_wand(num_sig, num_wand):
 		red.append(i.count('R'))
 	
 	average = 40 # (0+80)/2 = 40
-	return sum([2**(-num_sig)*i*average for i in red if i > num_wand])
+	print red
+	return sum(([2**(-num_sig)*i*average for i in red])) - (2**(-num_sig)*num_wand*40)
 
-
-
+	
+	
 if __name__ == '__main__':
-	print magic_wand(2, 1) #20.0
-	print magic_wand(3, 1) #45.0
+	print magic_wand(2, 1) #30.0
+	print magic_wand(3, 1) #55.0

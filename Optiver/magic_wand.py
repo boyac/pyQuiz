@@ -26,7 +26,7 @@ def magic_wand(num_sig, num_wand):
 		red.append(i.count('R'))
 	
 	#average = 40 # expected waiting time for 1 signal: (0+80)/2 = 40
-	#return sum([2**(-num_sig)*(i-1)*average for i in red if i-1 > 0])
+	#return sum([2**(-num_sig)*(i-1)*average for i in red if i-1 > 0]) # answers will be 10s and 25s
 	return sum([2**(-num_sig)*(i-1)*80 for i in red if i-1 > 0])
 	
 

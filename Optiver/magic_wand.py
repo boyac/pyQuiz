@@ -29,11 +29,12 @@ def magic_wand(num_sig, num_wand):
 	red = []
 	for i in toss:
 		red.append(i.count('R'))
-
-	return sum([2**(-num_sig)*mean(range(0, 81)) for i in red if i > num_wand])
+	
+	return sum([2**(-num_sig)*2*mean(range(1, (80*(i-num_wand)))) for i in red if i > num_wand])
+	# return sum([2**(-num_sig)*mean(range(0, 81)) for i in red if i > num_wand]) # seems to be wrong
 	
 	
 
 if __name__ == '__main__':
-	print magic_wand(2, 1) #10.0
-	print magic_wand(3, 1) #25.0
+	print magic_wand(2, 1) #20.0
+	print magic_wand(3, 1) #50.0

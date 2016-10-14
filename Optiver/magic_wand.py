@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Author: boyac
-# @Date:   2016-08-22 22:28:14
-# @Last Modified by:   boyac
-# @Last Modified time: 2016-10-13 23:29:57
-
-
 '''
 Questions:
 Calvin has to cross several signals when he walks from his home to school. 
@@ -27,15 +20,17 @@ from numpy import mean
 def magic_wand(num_sig, num_wand):
 	toss = map(''.join, itertools.product('GR', repeat=num_sig))
 	red = []
+	
+	# simulations for all possible events
 	for i in toss:
 		red.append(i.count('R'))
 	
-	average = 40 # (0+80)/2 = 40
-	print red
-	return sum(([2**(-num_sig)*i*average for i in red])) - (2**(-num_sig)*num_wand*40)
+	#average = 40 # expected waiting time for 1 signal: (0+80)/2 = 40
+	#return sum([2**(-num_sig)*(i-1)*average for i in red if i-1 > 0])
+	return sum([2**(-num_sig)*(i-1)*80 for i in red if i-1 > 0])
+	
 
-	
-	
+
 if __name__ == '__main__':
-	print magic_wand(2, 1) #30.0
-	print magic_wand(3, 1) #55.0
+	print magic_wand(2, 1) #20 seconds
+	print magic_wand(3, 1) #50 seconds

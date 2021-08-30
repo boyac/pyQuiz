@@ -12,7 +12,7 @@ import random
 
 ''' 
 Question: 
-Assign a=1, b=b,...,z=26. Find an 8 letter word whose sum is less than 50.
+Assign a=1, b=2,...,z=26. Find an 8 letter word whose sum is less than 50.
 '''
 with open("en_word.txt") as word_file:
     english_words = set(word.strip().lower() for word in word_file)
